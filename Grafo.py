@@ -13,6 +13,6 @@ class Grafo:
     def conect(self, m, a, peso=1):
         self.agregar(m)
         self.agregar(a)
-        self.E[(m, a)] = self.E[(a, m)] = peso 
+        self.R[(m, a)] = self.R[(a, m)] = peso 
         self.vecinos[m].add(a)
         self.vecinos[a].add(m)
